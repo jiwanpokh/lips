@@ -1,0 +1,50 @@
+
+CL-USER 1 > (defun neartoten (n)
+              (and (> n 8) (< n 12)))
+NEARTOTEN
+
+CL-USER 2 > (find-if 'neartoten '( 1 2 3 5 66 5))
+NIL
+
+CL-USER 3 > (length zerop('(1 2 3 0 2 0 3 0))
+)
+
+Error: The variable ZEROP is unbound.
+  1 (continue) Try evaluating ZEROP again.
+  2 Specify a value to use this time instead of evaluating ZEROP.
+  3 Specify a value to set ZEROP to.
+  4 (abort) Return to level 0.
+  5 Return to top loop level 0.
+
+Type :b for backtrace or :c <option number> to proceed.
+Type :bug-form "<subject>" for a bug report template or :? for other options.
+
+CL-USER 4 : 1 > (count-zero '(1 2 0 3 4 0 3 2 0))
+
+Error: Undefined operator COUNT-ZERO in form (COUNT-ZERO (QUOTE (1 2 0 3 4 0 3 2 0))).
+  1 (continue) Try invoking COUNT-ZERO again.
+  2 Return some values from the form (COUNT-ZERO (QUOTE (1 2 0 3 4 0 3 2 0))).
+  3 Try invoking something other than COUNT-ZERO with the same arguments.
+  4 Set the symbol-function of COUNT-ZERO to another function.
+  5 Set the macro-function of COUNT-ZERO to another function.
+  6 (abort) Return to level 1.
+  7 Return to debug level 1.
+  8 Return to level 0.
+  9 Return to top loop level 0.
+
+Type :b for backtrace or :c <option number> to proceed.
+Type :bug-form "<subject>" for a bug report template or :? for other options.
+Error while reading: Reader cannot find package 0.
+Error while reading: Unmatched right parenthesis.
+
+CL-USER 5 : 2 > (remove-special-free-action '( 1 2 3 2 9 20 0))
+(EDITOR::FREE-BIG-CHUNK SYSTEM::COND-CLOSE-C-FILE-STREAM)
+
+CL-USER 6 : 2 > (length (remove-if-not 'zerop '(1 2 2 0 3 20 30 0 3 03 30 0)))
+3
+
+CL-USER 7 : 2 > (setq my-list '(1 2 3 4 5 84 392 2023 93 39 34 4 10 291 2 12 12 13 13 41))
+(1 2 3 4 5 84 392 2023 93 39 34 4 10 291 2 12 12 13 13 41)
+
+CL-USER 8 : 2 >(defun inbetween (n)
+                 (cout

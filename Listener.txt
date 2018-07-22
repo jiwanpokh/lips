@@ -1,0 +1,15 @@
+
+CL-USER 1 > (defun ferhen (c)
+              (+ ( *(/ 9 5) c) 32))
+FERHEN
+
+CL-USER 2 > (fahren -45)
+
+CL-USER 3 : 1 > (ferhen -45)
+-49
+
+CL-USER 4 : 1 > (defun my-abs (num)
+                  if((> num 0) num ( -num)))
+MY-ABS
+
+CL-USER 5 : 1 > (my-abs -4)
